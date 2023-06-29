@@ -7,6 +7,9 @@
 
 }
 
+ header{
+    display: none;
+ }
 #aside{
     grid-area: aside;
     
@@ -97,13 +100,25 @@ nav ul li a:hover{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: "home";
+
     }
     
     #aside{
         display: none;
     }
-
-    header .header-container{
-        padding: 15px 7px;
+    header{
+        display: block;
+        position: fixed;
+        background-color: white;
+        width: 100vw;
+        height: 45px;
     }
+
+    .header-right .header-icon .fa-bars{
+        font-size: 1.1rem;
+        padding: 10px 25px;
+        margin-left:700px ;
+    }
+
+
 }
